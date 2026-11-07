@@ -1,0 +1,60 @@
+{
+ "status": "measured",
+ "split": "test",
+ "model": "maskrcnn-r50-fpn-final",
+ "trained_model": true,
+ "date": "2026-11-01",
+ "note": "locked baseline: Mask R-CNN R50-FPN, 3 epochs on 0-5, default tracker",
+ "hardware": "Tesla T4",
+ "overall": {
+  "TP": 15719,
+  "FP": 2471,
+  "FN": 7290,
+  "IDS": 402,
+  "GT": 23009,
+  "sMOTSA": 0.4298993166457476,
+  "MOTSA": 0.5583032726324482,
+  "MOTSP": 0.8120461464916348,
+  "fps": 1.7965916090616656
+ },
+ "sequences": {
+  "10": {
+   "TP": 3439,
+   "FP": 1176,
+   "FN": 1035,
+   "IDS": 235,
+   "GT": 4474,
+   "sMOTSA": 0.310606671777538,
+   "MOTSA": 0.4532856504246759,
+   "MOTSP": 0.8143804156826708,
+   "frames": 100,
+   "seconds": 75.85
+  },
+  "11": {
+   "TP": 5869,
+   "FP": 505,
+   "FN": 2048,
+   "IDS": 154,
+   "GT": 7917,
+   "sMOTSA": 0.5173753189157881,
+   "MOTSA": 0.6580775546292787,
+   "MOTSP": 0.8101994206604693,
+   "frames": 103,
+   "seconds": 85.88
+  },
+  "12": {
+   "TP": 6411,
+   "FP": 790,
+   "FN": 4207,
+   "IDS": 13,
+   "GT": 10618,
+   "sMOTSA": 0.4149405469309668,
+   "MOTSA": 0.5281597287624789,
+   "MOTSP": 0.8124845932480121,
+   "frames": 322,
+   "seconds": 130.49
+  }
+ },
+ "kitti_mots_txt": "/kaggle/working/eval/maskrcnn-r50-fpn-final",
+ "HOTA": null
+}

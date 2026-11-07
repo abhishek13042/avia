@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-01T15:50:43.731Z",
+  "title": "Design System: AVIA",
+  "extensions": {
+    "colorMeta": {
+      "label": {
+        "role": "primary",
+        "displayName": "Crate Label Blue",
+        "canonical": "#14296b",
+        "tonalRamp": [
+          "#020824",
+          "#0a1c5d",
+          "#243c80",
+          "#415da4",
+          "#617fc9",
+          "#82a3ef",
+          "#b1c9fe",
+          "#e7efff"
+        ]
+      },
+      "label-raised": {
+        "role": "primary",
+        "displayName": "Pressed Label Blue",
+        "canonical": "#1c3a8c",
+        "tonalRamp": [
+          "#010629",
+          "#041668",
+          "#1c3a8c",
+          "#395bb0",
+          "#587ed6",
+          "#79a2fd",
+          "#b1c9fd",
+          "#e7efff"
+        ]
+      },
+      "label-rule": {
+        "role": "primary",
+        "displayName": "Label Rule Blue",
+        "canonical": "#5f7bc9",
+        "tonalRamp": [
+          "#030726",
+          "#0d1a60",
+          "#263b83",
+          "#435ca7",
+          "#627ecc",
+          "#83a2f3",
+          "#b3c8fe",
+          "#e8eefe"
+        ]
+      },
+      "on-label": {
+        "role": "neutral",
+        "displayName": "Print on Label",
+        "canonical": "#f4f6fa",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#242528",
+          "#404245",
+          "#5f6165",
+          "#808286",
+          "#a3a5a9",
+          "#c7c9cc",
+          "#eeeeef"
+        ]
+      },
+      "on-label-soft": {
+        "role": "neutral",
+        "displayName": "Soft Print on Label",
+        "canonical": "#cfd9f0",
+        "tonalRamp": [
+          "#080b13",
+          "#1e2536",
+          "#3a4254",
+          "#596175",
+          "#798297",
+          "#9ba5bb",
+          "#c1c9dc",
+          "#eceef5"
+        ]
+      },
+      "straw": {
+        "role": "secondary",
+        "displayName": "Stamp Straw",
+        "canonical": "#f7d65c",
+        "tonalRamp": [
+          "#100a00",
+          "#2e2400",
+          "#504100",
+          "#745f02",
+          "#9b8005",
+          "#c3a215",
+          "#e2c869",
+          "#f7efd3"
+        ]
+      },
+      "straw-deep": {
+        "role": "secondary",
+        "displayName": "Deep Straw",
+        "canonical": "#e6bd2e",
+        "tonalRamp": [
+          "#110a00",
+          "#2f2400",
+          "#514004",
+          "#755f0a",
+          "#9d7f12",
+          "#c7a105",
+          "#e7c65f",
+          "#f8eed0"
+        ]
+      },
+      "apple": {
+        "role": "tertiary",
+        "displayName": "Apple Red",
+        "canonical": "#c8201a",
+        "tonalRamp": [
+          "#200000",
+          "#4d0000",
+          "#7f0907",
+          "#b90005",
+          "#e23e33",
+          "#ff7464",
+          "#ffb3a8",
+          "#ffe9e5"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Label Paper",
+        "canonical": "#f4f6fa",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#242528",
+          "#404245",
+          "#5f6165",
+          "#808286",
+          "#a3a5a9",
+          "#c7c9cc",
+          "#eeeeef"
+        ]
+      },
+      "paper-raised": {
+        "role": "neutral",
+        "displayName": "White Stock",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline Blue-Grey",
+        "canonical": "#cdd5e6",
+        "tonalRamp": [
+          "#090b11",
+          "#1f2531",
+          "#3c4250",
+          "#5a6170",
+          "#7b8292",
+          "#9ea5b5",
+          "#c3c9d7",
+          "#eceef3"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Stamp Ink",
+        "canonical": "#101d4d",
+        "tonalRamp": [
+          "#04091f",
+          "#122050",
+          "#2d3f72",
+          "#4b5f95",
+          "#6b80b9",
+          "#8ca3de",
+          "#b4c8fb",
+          "#e8eefe"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#46527a",
+        "tonalRamp": [
+          "#060a1a",
+          "#192246",
+          "#344066",
+          "#535f88",
+          "#7381ac",
+          "#95a3d0",
+          "#bbc8ef",
+          "#eaeefb"
+        ]
+      },
+      "wash": {
+        "role": "neutral",
+        "displayName": "Straw Wash",
+        "canonical": "#fdf2c4",
+        "tonalRamp": [
+          "#0f0b00",
+          "#2d2500",
+          "#4b4218",
+          "#6b6138",
+          "#8d8358",
+          "#b0a57a",
+          "#d2caa5",
+          "#f1efe3"
+        ]
+      },
+      "series-1": {
+        "role": "data",
+        "displayName": "Counted Blue",
+        "canonical": "#2a55c8",
+        "tonalRamp": [
+          "#000233",
+          "#020478",
+          "#0e31a2",
+          "#2a55c9",
+          "#497af0",
+          "#78a2ff",
+          "#b0c9fd",
+          "#e7effe"
+        ]
+      },
+      "series-2": {
+        "role": "data",
+        "displayName": "In-View Orange",
+        "canonical": "#c2570c",
+        "tonalRamp": [
+          "#1b0300",
+          "#401700",
+          "#6c2c01",
+          "#9b4304",
+          "#ca5f1a",
+          "#f28245",
+          "#fdb794",
+          "#ffeadf"
+        ]
+      },
+      "grid": {
+        "role": "data",
+        "displayName": "Chart Grid Grey",
+        "canonical": "#dfe4ef",
+        "tonalRamp": [
+          "#090b0f",
+          "#21252d",
+          "#3e424b",
+          "#5d616b",
+          "#7e828c",
+          "#a0a5af",
+          "#c5c9d2",
+          "#edeef1"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page titles, uppercase and balanced. One per page."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, uppercase."
+      },
+      "count": {
+        "displayName": "Count",
+        "purpose": "The rolling digits on the home plate; the run page count box sets them larger."
+      },
+      "tally": {
+        "displayName": "Tally",
+        "purpose": "The large comparison numbers on home."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "AVIA in the masthead, in straw."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The opening sentence on the hero and page heads, up to 56ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text, capped at 52ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Nav links, step names, event filters and fact rows."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Button text."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Captions, limits, table headers, legends and the footer."
+      }
+    },
+    "shadows": [
+      {
+        "name": "tooltip-lift",
+        "value": "0 4px 14px rgb(16 29 77 / 0.16)",
+        "purpose": "The chart tooltip only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "step",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Easing for every physical step: state changes, roller digits, progress."
+      },
+      {
+        "name": "state-step",
+        "value": "160ms",
+        "purpose": "Hover color and rule changes."
+      },
+      {
+        "name": "roller-step",
+        "value": "180ms",
+        "purpose": "One digit step, shorter than the video's 250ms time updates."
+      },
+      {
+        "name": "progress-step",
+        "value": "300ms",
+        "purpose": "Upload progress width."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "max-width: 520px"
+      },
+      {
+        "name": "stack",
+        "value": "max-width: 900px"
+      },
+      {
+        "name": "short-laptop",
+        "value": "min-width: 901px and max-height: 820px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button on Blue",
+      "kind": "button",
+      "refersTo": "button-primary-on-label",
+      "description": "The main action on a blue label ground.",
+      "html": "<div class=\"ds-ground\"><a class=\"ds-btn-straw\" href=\"#\">Try your own video</a></div>",
+      "css": ".ds-ground { background: var(--label); padding: 24px; } .ds-btn-straw { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 10px 22px; font: 700 1rem/1.2 var(--font-text); text-decoration: none; cursor: pointer; transition: background-color 160ms var(--step), border-color 160ms var(--step); border: 2px solid var(--straw); background: var(--straw); color: var(--ink); } .ds-btn-straw:hover { background: var(--straw-deep); border-color: var(--straw-deep); } .ds-btn-straw:focus-visible { outline: 2px solid var(--straw); outline-offset: 2px; }"
+    },
+    {
+      "name": "Primary Button on Paper",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action on paper. Styled in the system; no page renders one yet.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Try a video</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 10px 22px; font: 700 1rem/1.2 var(--font-text); text-decoration: none; cursor: pointer; transition: background-color 160ms var(--step), border-color 160ms var(--step); border: 2px solid var(--label-raised); background: var(--label-raised); color: var(--on-label); } .ds-btn-primary:hover { background: var(--label); border-color: var(--label); } .ds-btn-primary:focus-visible { outline: 2px solid var(--label-raised); outline-offset: 2px; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "A secondary action on paper, such as showing all events.",
+      "html": "<button class=\"ds-btn-quiet\" type=\"button\">Show all 547</button>",
+      "css": ".ds-btn-quiet { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 10px 22px; font: 700 1rem/1.2 var(--font-text); text-decoration: none; cursor: pointer; transition: background-color 160ms var(--step), border-color 160ms var(--step); border: 2px solid var(--label-raised); background: transparent; color: var(--label-raised); } .ds-btn-quiet:hover { background: var(--wash); } .ds-btn-quiet:focus-visible { outline: 2px solid var(--label-raised); outline-offset: 2px; }"
+    },
+    {
+      "name": "Masthead",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Blue masthead with the straw wordmark and label-weight links; the current page takes a straw underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main\"><a class=\"ds-brand\" href=\"#\">AVIA</a><a class=\"ds-nav-link\" href=\"#\" aria-current=\"page\">Try a video</a><a class=\"ds-nav-link\" href=\"#\">Benchmarks</a><a class=\"ds-nav-link\" href=\"#\">About</a></nav>",
+      "css": ".ds-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px; padding: 12px 24px; background: var(--label); border-bottom: 1px solid var(--label-rule); } .ds-brand { font: 700 1.75rem/1 var(--font-stamp); letter-spacing: 0.06em; color: var(--straw); text-decoration: none; margin-right: auto; } .ds-nav-link { padding: 8px 0; color: var(--on-label); font: 600 0.9375rem/1.55 var(--font-text); text-decoration: none; border-bottom: 2px solid transparent; transition: border-color 160ms var(--step); } .ds-nav-link:hover { border-color: var(--label-rule); } .ds-nav-link[aria-current=\"page\"] { border-color: var(--straw); } .ds-nav-link:focus-visible { outline: 2px solid var(--straw); outline-offset: 2px; }"
+    },
+    {
+      "name": "Dropzone",
+      "kind": "input",
+      "refersTo": "dropzone",
+      "description": "The site's one input: a dashed rule around a stencil call to action.",
+      "html": "<label class=\"ds-dropzone\"><input type=\"file\" accept=\"video/*\" /><strong>Choose a video</strong><span>or drop it here</span></label>",
+      "css": ".ds-dropzone { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-height: 260px; padding: 32px 20px; text-align: center; border: 2px dashed var(--label-rule); background: var(--paper-raised); color: var(--ink); font: 400 1.0625rem/1.55 var(--font-text); cursor: pointer; transition: background-color 160ms var(--step), border-color 160ms var(--step); } .ds-dropzone strong { font: 700 clamp(1.5rem, 3vw, 2rem)/1.1 var(--font-stamp); text-transform: uppercase; color: var(--label-raised); } .ds-dropzone:hover { border-color: var(--label-raised); background: var(--wash); } .ds-dropzone input { position: absolute; opacity: 0; width: 1px; height: 1px; } .ds-dropzone:focus-within { outline: 2px solid var(--label-raised); outline-offset: 2px; }"
+    },
+    {
+      "name": "Picture Window with Count Plate",
+      "kind": "custom",
+      "refersTo": "count-plate",
+      "description": "The signature object: footage in a ruled frame, with a straw plate rolling the count. Hover steps the last digit.",
+      "html": "<div class=\"ds-ground-window\"><div class=\"ds-window\"><div class=\"ds-footage\"></div><div class=\"ds-plate\"><span class=\"ds-plate-word\">Apples<br />counted</span><span class=\"ds-roller\" aria-hidden=\"true\"><span class=\"ds-roller-digit\" style=\"transform:translateY(-0em)\"><b>0</b><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b><b>6</b><b>7</b><b>8</b><b>9</b></span><span class=\"ds-roller-digit\" style=\"transform:translateY(-9em)\"><b>0</b><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b><b>6</b><b>7</b><b>8</b><b>9</b></span><span class=\"ds-roller-digit ds-last\" style=\"transform:translateY(-3em)\"><b>0</b><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b><b>6</b><b>7</b><b>8</b><b>9</b></span></span></div></div></div>",
+      "css": ".ds-ground-window { background: var(--label); padding: 24px; } .ds-window { position: relative; border: 2px solid var(--straw); padding: 7px; } .ds-footage { aspect-ratio: 16 / 10; background: var(--ink); } .ds-plate { position: absolute; right: 7px; bottom: 7px; display: flex; align-items: flex-end; gap: 14px; padding: 10px 16px 8px; background: var(--straw); color: var(--ink); } .ds-plate-word { font: 700 0.8125rem/1.25 var(--font-text); padding-bottom: 7px; } .ds-roller { display: inline-flex; font: 700 clamp(2.75rem, 6vw, 4.5rem)/1 var(--font-stamp); height: 1em; overflow: hidden; } .ds-roller-digit { display: block; width: 0.66em; text-align: center; transition: transform 180ms var(--step); } .ds-roller-digit b { display: block; height: 1em; font-weight: 700; } .ds-window:hover .ds-last { transform: translateY(-4em) !important; }"
+    },
+    {
+      "name": "Steps and Progress",
+      "kind": "custom",
+      "refersTo": "progress-on-paper",
+      "description": "Upload status: named steps with the active one underlined in red, over a square progress bar.",
+      "html": "<div class=\"ds-working\"><ol class=\"ds-steps\"><li data-state=\"done\">Upload</li><li aria-current=\"step\">Queue</li><li>Track</li></ol><div class=\"ds-progress\"><div style=\"width:42%\"></div></div><p class=\"ds-progress-line\"><span>Waiting in the queue…</span><span>42%</span></p></div>",
+      "css": ".ds-working { font: 400 1.0625rem/1.55 var(--font-text); color: var(--ink); } .ds-steps { display: flex; flex-wrap: wrap; gap: 4px 24px; margin: 0 0 16px; padding: 0; list-style: none; } .ds-steps li { color: var(--ink-soft); font-size: 0.9375rem; font-weight: 600; padding-bottom: 4px; border-bottom: 2px solid transparent; } .ds-steps li[data-state=\"done\"] { color: var(--ink); } .ds-steps li[aria-current=\"step\"] { color: var(--ink); border-color: var(--apple); } .ds-progress { height: 10px; background: var(--grid); overflow: hidden; } .ds-progress div { height: 100%; background: var(--apple); transition: width 300ms var(--step); } .ds-progress-line { display: flex; justify-content: space-between; gap: 16px; margin: 6px 0 0; font-size: 0.875rem; }"
+    },
+    {
+      "name": "Notice",
+      "kind": "card",
+      "refersTo": "notice",
+      "description": "A warning shown before a result is read.",
+      "html": "<p class=\"ds-notice\"><strong>Placeholder model.</strong> These results come from a simple colour rule, not the trained network.</p>",
+      "css": ".ds-notice { background: var(--wash); color: var(--ink); border: 1px solid var(--straw-deep); padding: 12px 16px; margin: 0; font: 400 1.0625rem/1.55 var(--font-text); }"
+    },
+    {
+      "name": "Score Table",
+      "kind": "custom",
+      "refersTo": "table-row-own",
+      "description": "Hairline table with right-aligned tabular numbers and AVIA's row in wash.",
+      "html": "<table class=\"ds-table\"><thead><tr><th>Model</th><th class=\"ds-num\">sMOTSA</th></tr></thead><tbody><tr class=\"ds-own\"><td>AVIA</td><td class=\"ds-num\">43.0</td></tr><tr><td>PointTrack</td><td class=\"ds-num\">38.7</td></tr></tbody></table>",
+      "css": ".ds-table { border-collapse: collapse; width: 100%; color: var(--ink); font: 400 1.0625rem/1.55 var(--font-text); font-variant-numeric: tabular-nums; } .ds-table th, .ds-table td { text-align: left; padding: 9px 20px 9px 0; border-bottom: 1px solid var(--rule); } .ds-table th { font-size: 0.875rem; font-weight: 700; color: var(--ink-soft); border-bottom-color: var(--ink); } .ds-table .ds-num { text-align: right; padding-right: 28px; } .ds-own td { background: var(--wash); font-weight: 700; } .ds-own td:first-child { padding-left: 10px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Stamped Box End",
+    "overview": "Fruit boxes carry their count on the end, and AVIA earns that number from video. The site is built as that box end: printed blue label bands hold the identity and the action, plain label paper holds the working and reading content, and the count is a straw stamp sitting on real footage. The system is flat, square and ruled, with stencilled headings over a sober Franklin text face.\n\nDensity follows the page's job. The home page is poster-sized and breathes in wide bands. The run page is a working surface of video, chart and tables, set tighter and held in hairlines. Reading pages drop to a single measured column. The one light theme suits daylight use on a laptop or phone at the orchard; the paper is cool, never cream.\n\nThe only decoration is structure. There are no textures, gradients, illustrations or drawn fruit, and the only apples on screen are real tracked footage. One authored motion carries the personality: digits rolling in whole steps, driven by the video's playhead.",
+    "keyCharacteristics": [
+      "Two grounds only: blue label and cool paper, each with its own full set of foreground colors",
+      "Stencil for headings and earned numbers, Franklin for everything else",
+      "Square corners and ruled frames throughout",
+      "Flat surfaces, with depth from rules and ground changes",
+      "One color at a time means \"current\": red on paper, straw on blue",
+      "A single signature motion, the count roller"
+    ],
+    "rules": [
+      {
+        "name": "The One Current Color Rule",
+        "body": "On paper, Apple Red appears only on what is current or what has failed. On blue, straw does that job. Red is never decoration, and hover states never use it: example tiles hover to a blue rule for exactly this reason.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Grounds Rule",
+        "body": "Every element is set on either blue label or paper, and each ground has its own text, action, focus and current colors. Placing a component on blue swaps its colors; it never carries its paper colors across.",
+        "section": "colors"
+      },
+      {
+        "name": "The Earned Stamp Rule",
+        "body": "Stencil is reserved for headings, the wordmark, the dropzone heading and counted numbers. Sentences, labels and table data are always Franklin.",
+        "section": "typography"
+      },
+      {
+        "name": "The Fixed Figures Rule",
+        "body": "Numerals never shift as they change. The body sets tabular figures globally, and the roller sets each stencil digit in a fixed 0.66em slot.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Box End Rule",
+        "body": "Printed surfaces do not lift. Nothing on a page takes a shadow, a gradient or a blur unless it genuinely floats over other content while the pointer is on it.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Ruled Frame Rule",
+        "body": "Footage is framed by a rule and a gap, never by a corner radius or a shadow. Rule weight carries rank: 2px for the main object, 1px for repeated ones.",
+        "section": "shapes"
+      },
+      {
+        "name": "The One Physical Step Rule",
+        "body": "A state change is a single physical step. Nothing enters with a fade or a slide, hovers change color without moving, and a failed step stops where it is and says why.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do set every new component on one of the two grounds and take its colors from that ground's set.",
+      "Do use Apple Red (#c8201a) on paper and straw (#f7d65c) on blue for whatever is current, and for failure.",
+      "Do frame footage with a rule and a gap: 2px straw and 7px for the lead picture, 1px ink and 5px for repeated tiles.",
+      "Do set counted numbers in Stardos Stencil and give changing digits fixed slots.",
+      "Do write \"pending\" in the value's own place when a figure is unmeasured.",
+      "Do keep hover states at a 160ms color step on `cubic-bezier(0.16, 1, 0.3, 1)`, with no movement.",
+      "Do give every chart a table view, and label lines and bars directly.",
+      "Do keep tap targets at 44px, including small controls inside tables.",
+      "Do keep text at 4.5:1 and interface elements at 3:1 on their ground."
+    ],
+    "donts": [
+      "Don't add a dark theme. The site has one light theme.",
+      "Don't warm the paper toward cream.",
+      "Don't use Apple Red for emphasis, links, hover or decoration.",
+      "Don't add corner radii to frames, buttons, plates or surfaces.",
+      "Don't add shadows outside the chart tooltip.",
+      "Don't show drawn or stock fruit. The only apples are real tracked footage.",
+      "Don't add textures, gradients or blur to the grounds.",
+      "Don't set sentences, labels or table data in the stencil face.",
+      "Don't animate entrances. Add new motion only where a value is genuinely changing.",
+      "Don't start a counter from zero before playback; show the finished count."
+    ]
+  }
+}

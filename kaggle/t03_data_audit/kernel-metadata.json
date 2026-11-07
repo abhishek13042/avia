@@ -1,0 +1,13 @@
+{
+  "id": "abhishekg14/avia-t03-data-audit",
+  "title": "avia-t03-data-audit",
+  "code_file": "t03_data_audit.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["abhishekg14/apple-mots"],
+  "competition_sources": [],
+  "kernel_sources": []
+}

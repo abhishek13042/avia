@@ -1,0 +1,11 @@
+data
+artifacts
+storage
+phases
+kaggle
+.git
+.claude
+**/__pycache__
+**/node_modules
+**/.next
+*.md

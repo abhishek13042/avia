@@ -1,0 +1,23 @@
+data/
+artifacts/*
+!artifacts/.gitkeep
+!artifacts/benchmarks.json
+checkpoints/
+*.pt
+*.onnx
+*.zip
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+.env
+storage/
+*.db
+web/node_modules/
+web/.next/
+
+# local build and session files
+web/tsconfig.tsbuildinfo
+.claude/settings.local.json
+.impeccable/live/

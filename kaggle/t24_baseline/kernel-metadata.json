@@ -1,0 +1,13 @@
+{
+  "id": "abhishekg14/avia-t24-baseline",
+  "title": "avia-t24-baseline",
+  "code_file": "train_maskrcnn.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["abhishekg14/apple-mots"],
+  "competition_sources": [],
+  "kernel_sources": []
+}

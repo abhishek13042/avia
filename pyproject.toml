@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avia"
+version = "0.1.0"
+description = "Apple instance segmentation, tracking and counting from orchard video"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy", "opencv-python-headless", "pillow", "scipy",
+  "fastapi", "uvicorn[standard]", "sqlalchemy", "pydantic", "python-multipart",
+]
+
+[project.optional-dependencies]
+ml = ["torch", "torchvision"]
+postgres = ["psycopg[binary]"]
+s3 = ["boto3"]
+dev = ["pytest", "httpx", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["src"]
+
+[tool.ruff.lint]
+ignore = ["B008"]  # FastAPI Depends() defaults

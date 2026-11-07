@@ -1,0 +1,62 @@
+# docker compose --env-file deployment/.env -f deployment/docker-compose.yml up --build
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: avia
+      POSTGRES_USER: avia
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set it in deployment/.env}
+    volumes:
+      - db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U avia"]
+      interval: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile.api
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://avia:${POSTGRES_PASSWORD}@db/avia
+      STORAGE_DIR: /data
+    volumes:
+      - files:/data
+      - ../artifacts:/artifacts:ro
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  worker:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile.api
+    command: ["python", "-m", "avia.worker.main"]
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://avia:${POSTGRES_PASSWORD}@db/avia
+      STORAGE_DIR: /data
+    volumes:
+      - files:/data
+      - ../artifacts:/artifacts:ro
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile.web
+      args:
+        NEXT_PUBLIC_API_URL: ${PUBLIC_API_URL:-http://localhost:8000}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+volumes:
+  db:
+  files:
