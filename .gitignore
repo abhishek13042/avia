@@ -1,8 +1,8 @@
-data/
+/data/
 artifacts/*
 !artifacts/.gitkeep
 !artifacts/benchmarks.json
-checkpoints/
+/checkpoints/
 *.pt
 *.onnx
 *.zip
@@ -12,7 +12,7 @@ __pycache__/
 .ruff_cache/
 .venv/
 .env
-storage/
+/storage/
 *.db
 web/node_modules/
 web/.next/
