@@ -21,3 +21,4 @@ web/.next/
 web/tsconfig.tsbuildinfo
 .claude/settings.local.json
 .impeccable/live/
+.impeccable/hook.cache.json
