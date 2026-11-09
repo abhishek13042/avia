@@ -202,3 +202,10 @@ def test_health_metrics_models_and_404(env):
     assert client.get("/api/models").json() == {"active": "color", "trained": False}
     assert client.get("/api/runs/nope").status_code == 404
     assert "x-request-id" in client.get("/api/health").headers
+
+
+def test_closed_uploads_are_refused_with_a_reason(env, video):
+    settings, *_ = env
+    client = TestClient(create_app(dataclasses.replace(settings, uploads_open=False)))
+    response = upload(client, video)
+    assert response.status_code == 503 and "free demo" in response.json()["detail"]

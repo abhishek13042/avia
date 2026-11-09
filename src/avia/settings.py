@@ -26,6 +26,7 @@ class Settings:
     max_attempts: int = 3
     ip_salt: str = "change-me"
     trust_proxy: bool = False
+    uploads_open: bool = True
 
 
 def load_settings() -> Settings:
@@ -47,4 +48,5 @@ def load_settings() -> Settings:
         retention_days=_int("RETENTION_DAYS", d.retention_days),
         ip_salt=os.environ.get("IP_SALT", d.ip_salt),
         trust_proxy=os.environ.get("TRUST_PROXY", "") == "1",
+        uploads_open=os.environ.get("UPLOADS_OPEN", "1") != "0",
     )

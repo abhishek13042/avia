@@ -1,0 +1,14 @@
+# Render Blueprint: one free web service built from deployment/render/Dockerfile.
+services:
+  - type: web
+    name: avia
+    runtime: docker
+    plan: free
+    dockerfilePath: ./deployment/render/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: IP_SALT
+        generateValue: true
+      - key: TRUST_PROXY
+        value: "1"

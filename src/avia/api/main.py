@@ -160,6 +160,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
 
     @app.post("/api/videos", response_model=VideoOut, status_code=201)
     def upload_video(file: UploadFile, request: Request, s: Session = Depends(session)):
+        if not settings.uploads_open:
+            raise HTTPException(503, "uploads are off on this free demo, which has too little "
+                                     "memory to run the model; run AVIA locally to try your own video")
         name = os.path.basename(file.filename or "video")
         extension = os.path.splitext(name)[1].lower()
         head = file.file.read(16)
