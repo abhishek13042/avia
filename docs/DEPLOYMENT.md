@@ -1,6 +1,6 @@
 # Deployment
 
-**What has been tested:** API, worker and site running together on SQLite and local disk, on Windows, with the placeholder model. **Not tested yet:** Docker images, Compose, Postgres, S3 storage, CI, and a GPU worker. Expect to fix small problems on the first run of each.
+**What has been tested:** API, worker and site running together on SQLite and local disk, on Windows, with the placeholder model. CI runs the tests on every push. **Not tested yet:** Docker images, Compose, Postgres, S3 storage, and a GPU worker. Expect to fix small problems on the first run of each.
 
 ## Docker Compose
 
@@ -12,6 +12,25 @@ docker compose --env-file deployment/.env -f deployment/docker-compose.yml up --
 Change `POSTGRES_PASSWORD` and `IP_SALT` in `deployment/.env` first. The site is on port 3000 and the API on port 8000. Put trained weights in `artifacts/`, which is mounted at `/artifacts`, and set `DETECTOR_SPEC=maskrcnn:/artifacts/model.pt`.
 
 `NEXT_PUBLIC_API_URL` is fixed when the web image is built. Rebuild the image after changing `PUBLIC_API_URL`.
+
+## Free demo on Render
+
+Render's free web service has 512 MB of memory. The model needs about 2 GB, so this setup serves the site, the API, the example runs and the benchmarks, and refuses uploads with a message (`UPLOADS_OPEN=0`). It sleeps after 15 minutes without visitors, and the first visit after that takes about a minute.
+
+1. The example runs are not in git. Put them in a public Hugging Face dataset, `abhishek1402/avia-demo`, which the image downloads while it builds:
+   ```bash
+   python deployment/hf-space/stage.py out
+   hf repos create abhishek1402/avia-demo --type dataset --public --exist-ok
+   hf upload abhishek1402/avia-demo out/seed . --repo-type dataset
+   ```
+   To use another dataset, change `SEED_REPO` in `deployment/render/Dockerfile`.
+2. On Render, choose **New → Blueprint** and pick this repository. It reads `render.yaml`, builds `deployment/render/Dockerfile`, and generates `IP_SALT`.
+
+The disk is reset on every restart, so the example runs are copied back each time.
+
+## One container with the model
+
+`deployment/hf-space/` runs the site, API and worker in one container with the model, for a host with at least 2 GB of memory, such as a Hugging Face Docker Space (which now needs a PRO plan on CPU). `python deployment/hf-space/stage.py <dir>` assembles the folder to upload, including the model and the example runs.
 
 ## Settings
 
@@ -31,6 +50,7 @@ Change `POSTGRES_PASSWORD` and `IP_SALT` in `deployment/.env` first. The site is
 | `RETENTION_DAYS` | 7 | Uploads and results are then deleted; demos stay |
 | `IP_SALT` | `change-me` | Must be changed; hashes client addresses |
 | `TRUST_PROXY` | off | Set to `1` only behind your own proxy |
+| `UPLOADS_OPEN` | on | Set to `0` to refuse uploads with a reason, for a host too small to run the model |
 
 ## Going public
 

@@ -31,4 +31,13 @@ dst.execute("PRAGMA journal_mode=DELETE")
 dst.close()
 src.close()
 shutil.copytree(repo / "storage/files", out / "seed/files")
+(out / "seed/README.md").write_text("""---
+license: cc-by-4.0
+pretty_name: AVIA example runs
+---
+
+The two example runs shown on the AVIA demo site: a SQLite database and the tracked videos.
+The footage comes from APPLE MOTS (De Jong et al., 2022, CC BY 4.0, doi:10.5281/zenodo.5939726).
+Code: https://github.com/abhishek13042/avia
+""", encoding="utf-8")
 print(out)
